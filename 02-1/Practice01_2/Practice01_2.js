@@ -6,11 +6,11 @@ function addTextNode(text) {
 
 const e = document.getElementById('button');
 e.addEventListener('click', () => {
-	let result = window.confirm("CLICK COMPLETE");
+	let result = window.confirm("CLICK COMPLETE!");
 
-	if(result) {
-		addTextNode('OKがクリックされました！');
-	} else {
-		addTextNode('キャンセルがクリックされました！');
-	}
+	// if(result) {
+	// 	addTextNode('OKがクリックされました！');
+	// } else {
+	// 	addTextNode('キャンセルがクリックされました！');
+	// }
 }, false);
