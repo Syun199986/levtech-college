@@ -94,3 +94,54 @@ foreach($alphabets as $key => $value){
 (breakとcontinue)
 break：現在のループを強制中断
 continue：現在のループ処理をスキップ(中断はされない)
+
+(関数)
+function ft_double(int $num): int(←戻り値の型) {
+	$result = $num * 2;
+	return $result;
+}
+
+$result_double = ft_double(3);
+
+(クラスとインスタンス)
+
+・オブジェクト指向
+クラス：データと処理をひとつにまとめる機能
+プロパティ：オブジェクトが持っているデータ
+メソッド：オブジェクトが持っている処理(クラスの中で定義された関数)
+インスタンス：クラスから実態を生成したもの
+
+(クラスの定義)
+class Human {
+	public $name = "human";
+	public $age = 20;
+	public function walk(){
+	}
+	public function run(){
+	}
+}
+
+(インスタンス化)
+$インスタンス名 = new クラス名;
+$human_A = new Human;
+
+(プロパティ・関数の使用)
+$インスタンス名->プロパティ名・関数名()
+
+echo $human_A->age //20と出力
+$human_A->age = 25 //ageの変更
+$human_A->walk(); //walk関数の呼び出し
+
+(継承)
+→元の雛形クラスをベースとして新たな雛形クラスを作成
+→→ポリモーフィズム
+
+class Super_Human(新しいクラス名) extends Human(ベースとなるクラス名) {
+	//プロパティ
+	//メソッド
+}
+
+・オブジェクト指向の三原則
+継承：共通点のあるプログラムを1つにまとめて、コードを再利用しやすくする仕組み
+カプセル化：他のプログラムからできるだけ変更できない仕組み
+ポリモーフィズム：継承したコードの一部を変更して利用するための仕組み
